@@ -28,7 +28,7 @@ app.get('/themas', async (req, res) => {
 app.get('/videos/by-uthema/:uthemaId', async (req, res) => {
     const uthemaId = req.params.uthemaId;
     try {
-        const { data, error } = await supabase.from('Video').select('*').eq('uthema_id', uthemaId);
+        const { data, error } = await supabase.from('video').select('*').eq('uthema_id', uthemaId);
         if (error) {
             throw error;
         }
@@ -41,7 +41,7 @@ app.get('/videos/by-uthema/:uthemaId', async (req, res) => {
 app.get('/uthema/:themaId', async (req, res) => {
     const themaId = req.params.themaId;
     try {
-        const { data, error } = await supabase.from('UThema').select('*').eq('thema_id', themaId);
+        const { data, error } = await supabase.from('uthema').select('*').eq('thema_id', themaId);
         if (error) {
             throw error;
         }
