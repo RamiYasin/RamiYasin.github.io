@@ -2,7 +2,7 @@
   "name": "ramisgpt",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ramiyasin.github.io/ramigpt",
+  "homepage": "https://ramiyasin.github.io/ramigpt/",
   "type": "module",
   "scripts": {
     "dev": "vite",
