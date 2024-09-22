@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './WelcomePage.css'; // Import the CSS file for styles
+import './welcomePage.css'; // Import the CSS file for styles
 import roImage from './assets/ro.jpg'; // Adjust the path as necessary
 
 export default function WelcomePage() {
