@@ -2,7 +2,7 @@
   "name": "ramisgpt",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://RamiYasin.github.io/react-gh-pages",
+  "homepage": "https://RamiYasin.github.io/ramigpt",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build"
   },
   "dependencies": {
     "react": "^18.3.1",
