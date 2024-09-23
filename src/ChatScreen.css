@@ -1,0 +1,139 @@
+/* General container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  background-color: #f0f0f0; /* Light background for contrast */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+  width: 100%;
+  text-align: center;
+  background-color: #0084ff; /* Header background */
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%; /* Adjust width as necessary */
+  max-width: 800px; /* Maximum width for larger screens */
+  height: 100%; /* Adjust height for your design */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(52, 5, 163, 0.945);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Message list */
+.message-list {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid #e5e5ea;
+  margin-bottom: 10px;
+}
+
+/* Message container */
+.message-container {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+/* User message */
+.user {
+  background-color: #0084ff;
+  align-self: flex-end;
+  color: #fff;
+}
+
+/* Bot message */
+.bot {
+  background-color: #228b22;
+  align-self: flex-start;
+  color: #fff;
+}
+
+/* Message text */
+.message-text {
+  margin: 0;
+}
+
+/* Timestamp */
+.timestamp {
+  font-size: 10px;
+  color: #fff;
+  margin-top: 5px;
+  align-self: flex-end;
+}
+
+/* Input container */
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #e5e5ea;
+}
+
+/* Input field */
+.input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #e5e5ea;
+  margin-right: 10px;
+  font-size: 1rem;
+  outline: none;
+  resize: none; /* Disable resizing for better UX */
+  box-sizing: border-box;
+}
+
+/* Send button */
+.send-button {
+  background-color: #0084ff;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #005bb5; /* Darker color on hover */
+}
+
+.send-button:active {
+  background-color: #003f7f; /* Even darker when clicked */
+}
+
+/* Loading indicator */
+.loading-indicator {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  z-index: 1000;
+}
